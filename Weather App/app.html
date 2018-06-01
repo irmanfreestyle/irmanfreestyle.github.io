@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="wrap-search">
+			<input type="text" id="cityName" placeholder="e.g. Cileungsi, Bogor">
+		</div>
+		<h1 align="center" id="city">City Name</h1>
+		<span id="country"></span>
+		<div class="middle">
+			<canvas id="icon" width="95" height="95"></canvas>
+			<div class="degrees">
+				<h1 id="temp">0</h1>
+				<span>&#176</span>
+			</div>
+			<h3 id="stat">Status</h3> 
+			<img src="img/loading.gif" alt="" id="loading">
+		</div>
+	</div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCihDm1OCiN23_nc3y432YsGt0OtAQ7ngA&libraries=places,geometry"></script>
+	<script src="js/skycons.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

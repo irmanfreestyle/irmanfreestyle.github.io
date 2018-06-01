@@ -1,0 +1,103 @@
+@media only screen and (max-width: 512px) {
+	
+	.container {
+		width: 100%;
+		max-width: none;
+	}
+
+
+}
+
+@media only screen and (max-width: 400px) {
+	
+	body {
+		font-size: 13px!important;
+	}
+
+	#icon {
+		width: 85px;
+		height: 85px;
+	}
+
+
+}
+
+
+
+
+body {
+	font-size: 14px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+.container {
+	box-sizing: border-box;
+	max-width: 500px;
+	border: 2px solid black;
+	margin: auto;
+	height: 100vh;
+	text-align: center;
+	padding: 25px 5px;
+}
+
+.wrap-search {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap-search input {	
+	text-align: center;
+	padding: 8px 4px;
+	width: 100%;
+	border: none;
+	outline: none;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.wrap-search input:focus {
+	box-shadow: 2px 1px 1px grey;
+}
+
+#city {
+	padding: 10px 0;
+}
+
+span#country {
+	padding: 10px 0;
+	padding-bottom: 30px;
+	display: inline-block;
+}
+
+h1, h3 {
+	margin: 0px;
+}
+
+.middle {
+	text-align: center;
+}
+
+.middle img {
+	width: 100px;
+	height: 100px;
+	margin: 0px;
+}
+
+.degrees {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+}
+
+
+#temp {
+	margin: 20px 0;
+	font-size: 12em;
+	margin-left: 50px;
+}
+
+
+.degrees span {
+	font-size: 6rem;
+}

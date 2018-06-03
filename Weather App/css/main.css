@@ -24,7 +24,6 @@
 
 
 
-
 body {
 	font-size: 14px;
 	margin: 0px;
@@ -36,7 +35,7 @@ body {
 	max-width: 500px;
 	border: 2px solid black;
 	margin: auto;
-	height: 100vh;
+	min-height: 100vh;
 	text-align: center;
 	padding: 25px 5px;
 }
@@ -79,8 +78,8 @@ h1, h3 {
 }
 
 .middle img {
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	margin: 0px;
 }
 

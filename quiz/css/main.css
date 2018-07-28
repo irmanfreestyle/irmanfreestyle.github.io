@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: comic sans ms;
+}
+
+body {
+    background: #37474F;
+    font-size: 16px;
+}
+
+h1 {
+    transition: 0.5s;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 2em;
+}
+
+.container {
+    background: #263238;
+    width: 85%;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: white;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 3px black;
+    position: relative;
+}
+
+.container h3 {
+    text-align: center;
+    color: dodgerblue;
+}
+
+.timer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: orange;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 10px;
+}
+
+.wrap-pertanyaan {
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.pilihan {
+    /* padding: 10px; */
+}
+
+.wrap-pilih {
+    background: #607D8B;
+    padding: 13px 10px;
+    margin: 8px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.wrap-pilih:hover {
+    box-shadow: 2px 2px 3px black;
+    background: #37474F;
+    cursor: pointer;
+}
+
+.active {
+    background: lightblue;
+}
+
+.active:hover {
+    background: lightblue!important;
+}
+
+.wrap-pilih:active {
+    background: black;
+}
+
+
+.btn {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn button {
+    background: dodgerblue;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    outline: none;
+    font-size: 1em;
+}
+
+.btn button:hover {
+    box-shadow: 2px 3px 4px black;
+    cursor: pointer;
+}
+
+.btn button:active {
+    box-shadow: none;
+}
+
+
+.wrap-reset {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.wrap-reset button {
+    background: goldenrod;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    outline: none;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px black;
+}
+
+.wrap-reset button:hover {
+    box-shadow: 2px 3px 4px black;
+    cursor: pointer;
+}
+
+.wrap-reset button:active {
+    box-shadow: none;
+}
+
+
+.warning {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #f44336;
+    padding: 10px 0;
+    color: white;
+    display: none;
+}
+
+.info {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    margin: -5px auto;
+    background: darkcyan;
+}
+
+
+.benar {
+    color: green!important;
+}
+
+
+.hasil .wrap-pilih {
+    background: transparent!important;
+}
+
+.hasil .wrap-pertanyaan {
+    border: 1px solid white!important;
+}

@@ -1,0 +1,194 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background: dodgerblue;
+}
+
+#app {
+	position: relative;
+}
+
+#app h1 {
+	color: white;
+	padding: 10px 0;
+}
+
+.container {
+	width: 600px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	border-radius: 5px;
+	position: relative;
+}
+
+
+.card {
+	width: 19%;
+	height: 110px;
+	/*perspective: 200px;*/
+	margin: 0.5%;
+}
+.card {
+	position: relative;
+	transform-style: preserve-3d;
+	/*width: 100%;*/
+	height: 110px;
+	transition: 1s;
+}
+
+.front, .back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 110px;
+}
+
+.front {
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-image: url(../img/ques.png);
+}
+
+.back {
+	transform: rotateY(180deg);
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+}
+
+
+.selected {
+	transform: rotateY(180deg);
+}
+
+
+
+.match {
+	transform: rotateY(0deg);
+	opacity: 0;
+}
+
+
+.restart {
+	width: 100px;
+	text-align: center;
+	padding: 10px 20px;
+	color: white;
+	background: dodgerblue;
+	border: none;
+	transition: 0.5s;
+	display: inline-block;
+}
+
+.restart:hover {
+	box-shadow: 2px 2px 2px grey;
+}
+
+.wrap {
+	padding: 10px;
+	background: #ccc;
+	width: 400px;
+	text-align: center;
+	margin: auto;
+	box-shadow: 2px 2px 2px grey;
+	position: absolute;
+	left: 17%;
+	top: 40%;
+	z-index: 100;
+}
+
+.wrap span {
+	padding: 5px;
+	color: white;
+	display: inline-block;
+}
+.wrap p {
+	padding: 5px;
+}
+
+
+
+.wrap-timer {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 200px;
+	text-align: center;
+	padding: 0px 20px;
+	background: white;
+	box-shadow: 2px 2px 4px black;
+	padding-bottom: 10px;
+}
+
+.wrap-timer h2 {
+	padding: 10px 0;
+	color: dodgerblue;
+}
+
+.wrap-timer span {
+	padding: 5px;
+	color: white;
+	display: inline-block;
+}
+
+.m {
+	background: dodgerblue;
+}
+
+.s {
+	background: dodgerblue;
+}
+
+.ms {
+	background: orange;
+}
+
+
+
+.wrap-start {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrap-start h1 {
+	color: dodgerblue;
+	padding: 20px 0;
+}
+
+.wrap-start button {
+	background: dodgerblue;
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.wrap-start button:hover {
+	box-shadow: 3px 3px 3px black;
+}
+
+.wrap-start button:active {
+	box-shadow: none;
+}

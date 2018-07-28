@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "myfont";
+  src: url(../fonts/myfont.ttf) format("truetype");
+}
+
+@media only screen and (max-width: 506px) {
+	body .header {
+		background-attachment: fixed;
+	}
+	body .container {
+		width: 100%;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: myfont;
+	font-weight: bold;
+}
+
+body {
+	font-size: 16px;
+	background: #90A4AE;	
+}
+
+[v-cloak] {
+	display: none;
+}
+
+.done {
+	text-decoration: line-through;
+	color: grey;
+}
+
+.container {
+	width: 500px;
+	height: 100vh;
+	border: 1px solid white;
+	margin: auto;
+	overflow: auto;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.header {
+	position: relative;
+	font-size: 1.8em;
+	color: white;
+	font-weight: bold;
+	height: 200px;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-position: 0px -150px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.count {
+	margin-top: 155px;
+	font-size: 0.7em;
+}
+
+.wrap-date {
+	display: inline-block;
+}
+.md {
+	font-size: 0.7em;
+	letter-spacing: 2px;
+}
+.day {
+	margin-top: 120px;
+}
+
+
+
+.content {
+	width: 100%;
+	padding: 10px 5px;
+}
+
+.content h3 {
+	padding: 10px 0;
+	margin-top: 50px;
+	color: dodgerblue;
+	text-shadow: 0.5px 1px 1px grey;
+}
+
+.content input[type=text] {
+	width: 100%;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 6px 0;
+	border-radius: 2px;
+	border: 1px solid grey;
+
+}
+
+.tasky {
+	display: inline-block;
+}
+
+.task {
+	border: 1px solid white;
+	border-radius: 4px;
+	padding: 0px 5px;
+	height: 45px;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	margin: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.3s;
+	position: relative;
+}
+
+.task:hover {
+	/*border-left: 4px solid dodgerblue;*/
+	box-shadow: 2px 2px 5px grey;
+}
+
+.task img {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	transition: 0.3s;
+}
+
+.task img:hover {
+	background: #ccc;
+}
+
+.task img:active {
+	background: grey;
+}
+
+.is-right a {
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px;
+}
+
+
+
+.wrap-edit {
+	position: absolute;
+	background: white;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	/*display: none;*/
+}
+
+.wrap-edit input {
+	font-size: 1em!important;
+}
+
+.wrap-edit img {
+	margin-top: 5px;
+}
+
+.is-left:hover {
+	cursor: pointer;
+}
+
+.tasky:hover {
+	text-decoration: line-through;
+	user-select: none;
+}

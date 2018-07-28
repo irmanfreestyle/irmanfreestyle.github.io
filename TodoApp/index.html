@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do App</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+			<header class="header">
+				<div class="wrap-date">
+					<div class="day">Sunday</div>
+					<div class="md">29, April 2018</div>
+				</div>
+				<div class="wrap-count">
+					<p class="count">{{ completed }} / {{ counts }}</p>
+				</div>
+			</header>
+			<section class="content">
+				<input type="text" v-model="text" @keyup.enter="add" placeholder="Input Your Task" class="text">
+				<h3 align="center" v-if="tasks.length<=0">Task is Empty</h3>
+				<div class="task animated fadeInLeft" v-for="task in tasks">
+					<div class="is-left">
+						<div class="wrap-mytask" @click="done(this)">
+							<input type="checkbox" :checked="task.done">
+							<span class="tasky" :class="{done:task.done}" v-cloak>{{ task.task }}</span>
+						</div>
+						<div class="wrap-edit">
+							<input type="text" @keyup.enter="edit(this)" v-model="textEdit">
+							<span @click="close(this)">
+								<img src="img/close.png">
+							</span>
+						</div>
+					</div>
+					<div class="is-right">
+						<a href="#">
+							<img src="img/edit.png" @click="open(this)">
+						</a>
+						<a href="#">
+							<img src="img/del.png" @click="del(this)">					
+						</a>			
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	
+
+	<script src="js/jquery.js"></script>
+	<script src="js/vue.js"></script>	
+	<script src="js/main.js"></script>
+</body>
+</html>

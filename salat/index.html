@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Assalamualaikum</title>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top navbar">
+        <a class="navbar-brand" href="#">RajinSalat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Ceramah Harian</a>
+            </div>
+        </div>
+        </nav>
+
+        
+        <!-- HEADER -->
+        <div class="header" id="header">
+            <div class="parent-quotes">
+                <div class="quotes">
+                        Jangan mengharapkan persahabatan dari mereka yang tak mengharapkan bersahabat denganmu. 
+                        "Ali bin Abi Thalib"
+                </div>
+            </div>
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="wrap-search">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Cari Lokasi..." id="keyword">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="initialize()">
+                        Cari!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TITLE -->
+        <h2 class="text-center" id="cityName"></h2>
+        <br>
+
+        <!-- TABLE -->
+        <div class="container-fluid bg-light">            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card my-card">                        
+                        <div class="card-header bg-success text-white">
+                            Jadwal Salat Hari Ini, <span class="times"></span>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-now">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imsak</th>
+                                        <th class="time-now">---</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Subuh</th>
+                                        <th class="time-now">---</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Dhuhr</th>
+                                        <th class="time-now">---</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Ashar</th>
+                                        <th class="time-now">---</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Magrib</th>
+                                        <th class="time-now">---</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Isya</th>
+                                        <th class="time-now">---</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="bg-success text-white">
+                                <tr><td colspan="7" class="text-center header-this-month"></td></tr>
+                                <tr>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Imsak</th>
+                                    <th scope="col">Shubuh</th>
+                                    <th scope="col">Dhuhr</th>
+                                    <th scope="col">Ashar</th>
+                                    <th scope="col">Magrib</th>
+                                    <th scope="col">Isya</th>
+                                </tr>
+                            </thead>                            
+                            <tbody class="this-month">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="bg-success text-white">
+            <p>Created With</p>
+            <p class="material-icons">mood</p>
+            <p>Bismillah</p>
+        </footer>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCihDm1OCiN23_nc3y432YsGt0OtAQ7ngA&libraries=places,geometry"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

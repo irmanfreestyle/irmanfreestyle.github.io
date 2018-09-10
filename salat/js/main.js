@@ -67,7 +67,7 @@ setInterval(function() {
 }, 8000);
 
 function getUrl(lat, long) {
-    Url = `http://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}&method=5&month=${month}&year=${year}`;    
+    Url = `https://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}&method=5&month=${month}&year=${year}`;    
 }
 
 function first(lat, long, jak) {

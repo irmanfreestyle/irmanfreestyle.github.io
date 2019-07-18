@@ -1,0 +1,20 @@
+@keyframes basicAnimate {
+    0% {
+        opacity: 0;       
+    }    
+    100% {
+        opacity: 1;
+    }
+}
+
+.basic-animate {
+    animation: basicAnimate 1s linear;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.capitalize {
+    text-transform: capitalize!important;
+}

@@ -1,7 +1,9 @@
+window.onload = initialize();
+
 let Url = "";
 let year = new Date().getFullYear();
 let month =  new Date().getMonth() + 1;
-let date = new Date().getDate() - 1;
+let date = new Date().getDate();
 let jaklat = -6.17511;
 let jaklong = 106.8650395;
 let quotes = [
@@ -17,6 +19,7 @@ let quotes = [
 ];
 
 $(".times").text(`${date}/${month}/${year}`);
+
 switch(month - 1) {
     case 0:
         $(".header-this-month").text(`Jadwal Salat di Bulan Januari`);
@@ -72,19 +75,20 @@ function getUrl(lat, long) {
 
 function first(lat, long, jak) {
     getUrl(lat, long)
-    
+        $(".loading").css('display', 'flex')
         
         // GET DATA
         $.ajax({
             url: Url,
             success: function(datas) {
+            $(".loading").css('display', 'none')
 
             // Change City Name
             let city = $("#keyword").val().split(",");
             let cityName = city[0];
             (jak == undefined ? $("#cityName").text(`Jadwal Salat ${cityName}`) : $("#cityName").text(`Jadwal Salat Jakarta`) )
 
-            let today = datas.data[date].timings;                
+            let today = datas.data[date - 1].timings;                
             
             // Today 
             $(".time-now").eq(0).text(`${today.Imsak}`)
@@ -98,7 +102,7 @@ function first(lat, long, jak) {
             console.log(datas)
             $(".this-month").empty();
             datas.data.forEach((data, idx)=> {
-                if(idx == date) {
+                if(idx == date - 1) {
                     $(".this-month").append(`
                         <tr class='active-now'>
                             <th>${++idx}</th>
@@ -147,9 +151,7 @@ function initialize() {
     
 }
 
-window.onload = initialize();
 
-// google.maps.event.addDomListener(window, 'load', initialize);
 
 
 function getLocation() {

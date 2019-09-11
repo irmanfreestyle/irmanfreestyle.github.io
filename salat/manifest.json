@@ -1,0 +1,16 @@
+{
+    "name": "Jadwal Solat",
+    "short_name": "SolatKuy",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffe9d2",
+    "theme_color": "#ffe1c4",
+    "orientation": "landscape",
+    "icons": [
+        {
+            "src":"/img/logo.png",
+            "type": "image/png",
+            "sizes": "140x140"
+        }
+    ]
+}

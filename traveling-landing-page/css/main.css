@@ -1,0 +1,36 @@
+.nav-item {
+  margin-left: 5px!important;
+  margin-right: 5px!important;
+}
+
+
+html {
+  margin: 0px;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+}
+
+
+.card {
+  transition: 0.3s;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 3px 5px 8px rgba(0,0,0,0.4);
+}
+
+
+.rate {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+#international .card {
+  border-radius: 20px 0px 20px 0px!important;
+  overflow: hidden;
+}

@@ -1,11 +1,11 @@
 $(document).ready(function() {
-   
+    $("#copyright").append(new Date().getFullYear())
 
     let i = 0;
     let text = ["H","i",",","<br>","I","'","m","I","r","m","a","n",",","<br>","W","e","b","D","e","v","e","l","o","p","e","r","."];
-    
+
     type = setInterval(()=> {
-        if(i >= 26) {                                
+        if(i >= 26) {
             clearInterval(type);
         }
 
@@ -20,24 +20,23 @@ $(document).ready(function() {
         } else if(i == 3 || i == 13) {
             $(".intro").append(`${text[i]}`);
         }
-        
+
         i++;
 
-    }, 10);    
-    
+    }, 10);
+
     n = 0;
     animate = setInterval(()=> {
 
         if(n>=25) {
-            $(".my-btn").fadeIn(1000);   
-            $(".intro").append("<p class='animated fadeIn'>Html / Css / Javascript / Jquery / Vue.js / Bootstrap / Php / MySQL</p>")
+            $(".my-btn").fadeIn(1000);
+            $(".intro").append("<p class='animated fadeIn'>Html / Css / Javascript / Jquery / Vue.js / React.js / Bootstrap / Php / Codeigniter</p>")
             setTimeout(()=> {
-                $(".intro span").removeClass("rubberBand");      
-                $(".intro p").addClass("show")          
+                $(".intro span").removeClass("rubberBand");
+                $(".intro p").addClass("show")
             }, 1000);
             clearInterval(animate)
         }
-        console.log(n)
         $(".intro span").eq(n).addClass("show animated rubberBand")
 
         n++;
@@ -61,7 +60,7 @@ $(document).ready(function() {
         $(".menus-btn span").eq(1).toggleClass("two");
         $(".menus-btn span").eq(2).toggleClass("three");
     })
-    
+
 
 });
 
@@ -85,7 +84,7 @@ $(function() {
         var name = $('#keyboard').val(),
             email = $('#keyboard2').val();
 
-        $.ajax({ 
+        $.ajax({
             type: 'POST',
             url: 'https://mandrillapp.com/api/1.0/messages/send.json',
             data: {
@@ -105,7 +104,6 @@ $(function() {
                 }
             }
         }).done(function(response) {
-            console.log(response);
             alert("You send an email!"); // if you're into that sorta thing
         });
     });

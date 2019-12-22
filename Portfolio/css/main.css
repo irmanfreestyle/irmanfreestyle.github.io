@@ -3,7 +3,7 @@
     body {
         font-size: 13px!important;
     }
-    
+
 
     /* navbar */
     nav.mynav {
@@ -45,7 +45,7 @@
 
     .menus a:hover span.titles {
         color: aqua!important;
-    }   
+    }
 
     .menus a:hover {
         margin-top: 15px;
@@ -53,10 +53,12 @@
 
 
     /* jumbotron */
-    body #home {        
-        padding-left: 0px!important;
-        height: 100vh;        
-        padding-top: 80px;
+    body #home {
+      overflow: hidden;
+      padding-right: 0px!important;
+      padding-left: 0px!important;
+      height: 100vh;
+      padding-top: 80px;
     }
 
     body #home img {
@@ -64,7 +66,7 @@
         height: 150px;
     }
 
-    
+
 }
 
 
@@ -172,7 +174,7 @@ body {
     color: aqua;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 4px 9px rgba(0,0,0,0.4);    
+    box-shadow: 2px 4px 9px rgba(0,0,0,0.4);
 }
 
 .top {
@@ -289,7 +291,7 @@ body {
     padding: 5px 15px;
     border: 1px solid aqua;
     color: aqua;
-    border-radius: 5px;    
+    border-radius: 5px;
     letter-spacing: 3px;
     display: none;
 }
@@ -363,13 +365,15 @@ body {
 }
 
 .skill:nth-child(8) {
-    background: #e53935;
+    background: #4E5B93;
 }
-
+.skill:nth-child(9) {
+    background: #DD4B32;
+}
 
 /*PROJECT*/
 
-.parent-projects {    
+.parent-projects {
     display: flex;
     /*border: 1px solid white;*/
     justify-content: space-around;
@@ -430,7 +434,7 @@ body {
 }
 
 .line {
-    border-radius: 20px;    
+    border-radius: 20px;
     transition: 0.3s;
     position: absolute;
     left: 0;
@@ -439,7 +443,7 @@ body {
     width: 0%;
     background: #b92b27;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*FORM*/
@@ -471,11 +475,11 @@ body {
     margin-bottom:30px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     #contact iframe {
         margin-bottom: 15px;
     }
-    
+
 }
 
 

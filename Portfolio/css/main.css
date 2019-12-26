@@ -363,11 +363,16 @@ body {
 .skill:nth-child(7) {
     background: #6200EA;
 }
-
 .skill:nth-child(8) {
-    background: #4E5B93;
+    background: #70B352;
 }
 .skill:nth-child(9) {
+    background: #70B352;
+}
+.skill:nth-child(10) {
+    background: #4E5B93;
+}
+.skill:nth-child(11) {
     background: #DD4B32;
 }
 
